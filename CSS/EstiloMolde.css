@@ -1,0 +1,68 @@
+body{ padding: 0px; margin: 0px;}
+
+.div1{ height: 450px;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;}
+
+.nav1{height: 50px;
+    margin-top: 330px;
+    margin-left: -3px;
+    width: 715px;
+    background-color: rgba(10, 103, 243, 0.404);
+    padding-left: 805px;
+    padding-top: 1px;}
+
+.menu{color: white; margin: 5px; font-size: 20px;}
+.menu:hover{color: rgb(82, 200, 230)}
+
+.div2{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        margin-top: -110px;
+        margin-left: 150px;}
+    
+.div3{
+        background-size: cover;
+        background-position: center center;
+        height: 1100px;
+        border: 1px solid red;
+        position: absolute;
+        margin-top: 450px;
+        width: 100%;
+        opacity: 0.05}   
+
+.div4{background-color: rgba(10, 103, 243, 0.616);
+    border: 5px solid rgba(10, 103, 243, 0.404);
+    border-radius: 30px;}
+
+.Pbase{text-indent: 40px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;}
+
+footer{border: 3px solid rgba(10, 103, 243, 0.404);
+    background-color: rgb(10, 103, 243);
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    margin-top: 1450px;}
+
+.div5{text-align: center;
+    padding-top: 5px;
+    width: 100%;}
+
+.Pfinal{color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;}
+
+h1{text-align: center; color: white;
+    font-family: 'Times New Roman', Times, serif;}
+a>b{font-family: 'Times New Roman', Times, serif;}
+
+
+

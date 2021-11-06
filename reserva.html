@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voa Rio</title>
+
+    <link rel="stylesheet" type="text/css" href="..//Projeto FInal/CSS/EstiloMolde.css">
+    <link rel="stylesheet" type="text/css" href="..//Projeto FInal/CSS/estiloReserva.css">
+
+    <style>
+        .div1 {
+            background-image: url(Imagens/projeto5.jpg)
+        }
+
+        .div3 {
+            background-image: url(./Imagens/projeto6.jpg)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="div1">
+            <nav class="nav1">
+                <p>
+                    <a class="menu" href="index.html"> <b>Home</b></a>
+                    <a class="menu" href="historia.html"><b>Quem Somos</b></a>
+                    <a class="menu" href="galeria.html"><b>Fotos</b></a>
+                    <a class="menu" href="video.html"><b>Videos</b></a>
+                    <a class="menu" href="reserva.html"><b>Reservar Voo</b></a>
+                    <a class="menu" href="faleConosco.html"><b>Fale Conosco</b></a>
+                </p>
+            </nav>
+            <div class="div2">
+                <img src="..//Projeto FInal/Imagens/hang-gliding-99100_960_720.png" alt="Não carregou" height="100%"
+                    width="100%">
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="div3">
+        </div>
+        <div class="div4" style="position: absolute;
+                    height: 915px;
+                    width: 1225px;
+                    margin-top: 500px;
+                    margin-left: 150px;
+                    ;">
+            <h1>Reserva de Voo</h1>
+            <hr align="center" size="3px" width="80%" color="white">
+            <br>
+            <form action="">
+                <p class="Pbase">O valor do voo é de <b><u>R$600,00</u></b>, está incluso o "transfer" da praia de São
+                    Conrado até a
+                    Pedra Bonita e
+                    as filmagens. Marque a data e a hora do voo, completando todos os campos aqui apresentados.</p>
+                <p class="Pbase">Iremos confirmar sua reserva, respondendo-o por e-mail. Obrigado!!!</p>
+                <br>
+                <fieldset class="fieldsetExterno" style="height: 580px;">
+                    <legend>Reservar Voo:</legend>
+
+                    <div class="arrumarP1">
+                        <fieldset class="fieldsetInterno">
+                            <legend>Dados Pessoais</legend>
+
+                            <label class="labels" id="iLabelNome" for="iNome"><b>Nome Completo:</b></label>
+                            <input class="inputGrande" type="text" name="nome" id="iNome"
+                                onkeypress="campoVazio('Nome')">
+                            <p class="pErro" id="ierroNome"></p>
+
+                            <label class="labels" id="iLabelCpf" for="iCpf"><b>CPF:</b></label>
+                            <input placeholder="000.000.000-00" type="text" name="CPF" id="iCpf"
+                                onkeyup="checkNumero(this.value, 'Cpf')" onkeypress="campoVazio('Cpf')">
+                            <p class="pErro" id="ierroCpf"></p>
+                            <p class="pErro" id="ierroCpf2"></p>
+
+                            <label class="labels" id="iLabelDataNasc" for="iDataNasc"><b>Data de Nascimento:</b></label>
+                            <input type="date" name="dataNasc" id="iDataNasc" onchange="campoVazio('DataNasc')">
+                            <p class="pErro" id="ierroDataNasc"></p>
+                            <br>
+
+                            <fieldset class="fieldsetRd1" id="iFieldGenero" style="height: 80px;
+                                            width: 150px;
+                                            border: 1px solid white;
+                                            ">
+                                <legend id="iLabelGenero" style="font-size: 20px;">Gênero</legend>
+                                <label class="radio1" for="ihomem"><b>Homem</b></label>
+                                <input style="float: left; width: 30px; margin-left: 10px;" type="radio" name="sexo"
+                                    id="iHomem" onchange="verificarGenero2()">
+                                <br>
+                                <br>
+                                <label class="radio1" for="imulher"><b>Mulher</b></label>
+                                <input style="float: left; width: 30px; margin-left: 10px;" type="radio" name="sexo"
+                                    id="iMulher" onchange="verificarGenero2()">
+                            </fieldset>
+                            <p class="pErro" id="ierroGenero" style="margin-left: 40px;"></p>
+
+                        </fieldset>
+                    </div>
+
+                    <div class="arrumarP2">
+                        <fieldset class="fieldsetInterno">
+                            <legend>Residência</legend>
+
+                            <label id="iLabelUf" class="labelsUf" for="iUf"><b>UF:</b></label>
+                            <select style="background-color: white; border-radius: 5px; color: blue; font-family: 'Times New Roman', Times, serif; font-size: 20px;" id="iUf" onchange="campoVazio('Uf')">
+                                <option value=""></option>
+                                <option value="">AC</option>
+                                <option value="">AL</option>
+                                <option value="">AP</option>
+                                <option value="">AM</option>
+                                <option value="">BA</option>
+                                <option value="">CE</option>
+                                <option value="">DF</option>
+                                <option value="">ES</option>
+                                <option value="">GO</option>
+                                <option value="">MA</option>
+                                <option value="">MT</option>
+                                <option value="">MS</option>
+                                <option value="">MG</option>
+                                <option value="">PA</option>
+                                <option value="">PB</option>
+                                <option value="">PR</option>
+                                <option value="">PE</option>
+                                <option value="">PI</option>
+                                <option value="">RN</option>
+                                <option value="">RS</option>
+                                <option value="">RO</option>
+                                <option value="">RR</option>
+                                <option value="">SC</option>
+                                <option value="">SP</option>
+                                <option value="">SE</option>
+                                <option value="">TO</option>
+                            </select>
+                            <p class="pErro" id="ierroUf"></p>
+                            <br>
+
+                            <label class="labels" for="iCep"><b>Cep:</b></label>
+                            <input class="inputGrande" type="text" id="iCep" onkeypress="campoVazio('Cep')"
+                                onkeyup="checkNumero(this.value, 'Cep')">
+                            <p class="pErro" id="ierroCep"></p>
+                            <p class="pErro" id="ierroCep2"></p>
+
+                            <label class="labels" for="iCidade"><b>Cidade:</b></label>
+                            <input class="inputGrande" type="text" id="iCidade" onkeypress="campoVazio('Cidade')">
+                            <p class="pErro" id="ierroCidade"></p>
+
+                            <label class="labels" for="iBairro"><b>Bairro:</b></label>
+                            <input class="inputGrande" type="text" id="iBairro" onkeypress="campoVazio('Bairro')">
+                            <p class="pErro" id="ierroBairro"></p>
+
+                            <label class="labels" for="iRua"><b>Rua:</b></label>
+                            <input class="inputGrande" type="text" id="iRua" onkeypress="campoVazio('Rua')">
+                            <p class="pErro" id="ierroRua"></p>
+
+                            <label class="labels" for="iComplemento"><b>Complemento:</b></label>
+                            <input class="inputGrande" type="text" id="iComplemento"
+                                onkeypress="campoVazio('Complemento')">
+                            <p class="pErro" id="ierroComplemento"></p>
+                        </fieldset>
+                    </div>
+                    <div class="arrumarP3">
+                        <fieldset class="fieldsetInterno">
+                            <legend>Contato</legend>
+
+                            <label class="labels" for="iEmail"><b>E-mail:</b></label>
+                            <input class="inputGrande" type="email" name="email" id="iEmail"
+                                onkeyup="verificarEmail(this.value, 'Email')" onblur="styleEmail()"
+                                onkeypress="campoVazio('Email')">
+                            <p class="pErro" id="ierroEmail"></p>
+                            <p class="pErro" id="ierroEmail2"></p>
+
+                            <label class="labels" for="iCelular"><b>Celular:</b></label>
+                            <input type="tel" name="celular" id="iCelular" onkeyup="checkNumero(this.value, 'Celular')"
+                                onkeypress="campoVazio('Celular')">
+                            <p class="pErro" id="ierroCelular"></p>
+                            <p class="pErro" id="ierroCelular2"></p>
+
+                        </fieldset>
+                    </div>
+                    <div class="arrumarP4">
+                        <fieldset class="fieldsetInterno">
+                            <legend>Data e Hora do Salto</legend>
+
+                            <label id="iLabelOpcaoVoo" class="labelsUf" for="iOpcaoVoo"><b>Hora:</b></label>
+                            <select style="font-size: 20px; background-color: white; border-radius: 5px; color: blue; font-family: 'Times New Roman', Times, serif;" id="iOpcaoVoo" onchange="campoVazio('OpcaoVoo')">
+                                <option value=""></option>
+                                <option value="">08:00</option>
+                                <option value="">09:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                            </select>
+                            <p class="pErro" id="ierroOpcaoVoo"></p>
+                            <br>
+
+                            <label class="labels" for="iDataVoo"><b>Data:</b></label>
+                            <input class="inputGrande" type="date" id="iDataVoo" onchange="campoVazio('DataVoo')">
+                            <p class="pErro" id="ierroDataVoo"></p>
+
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                <input class="botao" type="button" value="Enviar" id="bEnviar" onclick="verificarCampoVazio()">
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav class="div5">
+            <a href="https://www.youtube.com"><img src="..//Projeto FInal/Imagens/youtube.png" alt="Náo carregou"
+                    height="50px" width="50px"></a>
+            <a href="https://www.instagram.com"><img src="..//Projeto FInal/Imagens/pngegg.png" alt="Náo carregou"
+                    height="50px" width="50px"></a>
+            <br>
+            <p class="Pfinal">
+                ASADELTA - Companhia Turistica / CNPJ: 00.000.000/0000-00 / Inscrição
+                Estadual: 00.000.00-0 / Endereço Rua Queda Livre, 000 - Rio de Janeiro, RJ - 000000-000 </p>
+        </nav>
+
+    </footer>
+    <script type="text/javascript" src="..//Projeto FInal/js/scriptCamposTexto.js"></script>
+</body>
+
+</html>

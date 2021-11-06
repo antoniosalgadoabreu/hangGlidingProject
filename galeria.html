@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voa Rio</title>
+
+    <link rel="stylesheet" type="text/css" href="..//Projeto FInal/CSS/EstiloMolde.css">
+    <link rel="stylesheet" type="text/css" href="..//Projeto FInal/CSS/estiloGaleria.css">
+
+    <style>
+        .div1 {
+            background-image: url(Imagens/projeto5.jpg)
+        }
+
+        .div3 {
+            background-image: url(./Imagens/projeto6.jpg)
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            size: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="div1">
+            <nav class="nav1">
+                <p>
+                    <a class="menu" href="index.html"> <b>Home</b></a>
+                    <a class="menu" href="historia.html"><b>Quem Somos</b></a>
+                    <a class="menu" href="galeria.html"><b>Fotos</b></a>
+                    <a class="menu" href="video.html"><b>Videos</b></a>
+                    <a class="menu" href="reserva.html"><b>Reservar Voo</b></a>
+                    <a class="menu" href="faleConosco.html"><b>Fale Conosco</b></a>
+                </p>
+            </nav>
+            <div class="div2">
+                <img src="..//Projeto FInal/Imagens/hang-gliding-99100_960_720.png" alt="Não carregou" height="100%"
+                    width="100%">
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="div3">
+        </div>
+        <div class="div4" style="position: absolute;
+                    height: 880px;
+                    width: 1225px;
+                    margin-top: 500px;
+                    margin-left: 150px;
+                    ;">
+            <br>
+            <div style="margin-left: 5px;
+                        margin-top: 5px;
+                        height: 300px;
+                        width: 1220px;
+                        position: absolute;">
+                <h1>Galeria de fotos</h1>
+                <hr align="center" width="80%" color="white">
+                <div style="position: absolute;
+                                margin-top: 10px;
+                                margin-left: 10px;
+                                width: 1100px;
+                                height: 620px;
+                                padding-left: 55px;
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;">
+
+                    <button class="botaoFoto" onclick="anterior()"><</button>
+                    <br>
+                    <div class="tela">
+                        <img id="itelaP" src="..//Projeto FInal/Imagens/rio-de-janeiro-hang-gliding.jpg" alt="">
+                        <p id="itexto">Visual do Salto</p>
+                    </div>
+                    <br>
+                    <button class="botaoFoto" onclick="proximo()">></button>
+                </div>
+                <div id="iselecaoFotos">
+                    <img id="foto0" class="faixaFotos" src="..//Projeto FInal/Imagens/rio-de-janeiro-hang-gliding.jpg" alt="" style="border-color: darkblue;" onclick="selecionarFotoManual('0')">
+                    <img id="foto1" class="faixaFotos" src="..//Projeto FInal/Imagens/projeto1.png" alt="" onclick="selecionarFotoManual('1')">
+                    <img id="foto2" class="faixaFotos" src="..//Projeto FInal/Imagens/landing-is-easy-they.jpg" alt="" onclick="selecionarFotoManual('2')">
+                    <img id="foto3" class="faixaFotos" src="..//Projeto FInal/Imagens/asa-delta-rio-de-janeiro-beto-rotor-pista-de-voo-livre-pedra-bonita.jpg" alt="" onclick="selecionarFotoManual('3')">
+                    <img id="foto4" class="faixaFotos" src="..//Projeto FInal/Imagens/still-fun.jpg" alt="" onclick="selecionarFotoManual('4')">
+                    <img id="foto5" class="faixaFotos" src="..//Projeto FInal/Imagens/G0025178-1.jpg" alt="" onclick="selecionarFotoManual('5')">
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <nav class="div5">
+            <a href="https://www.youtube.com"><img src="..//Projeto FInal/Imagens/youtube.png" alt="Náo carregou"
+                    height="50px" width="50px"></a>
+            <a href="https://www.instagram.com"><img src="..//Projeto FInal/Imagens/pngegg.png" alt="Náo carregou"
+                    height="50px" width="50px"></a>
+            <br>
+            <p class="Pfinal">
+                ASADELTA - Companhia Turistica / CNPJ: 00.000.000/0000-00 / Inscrição
+                Estadual: 00.000.00-0 / Endereço Rua Queda Livre, 000 - Rio de Janeiro, RJ - 000000-000 </p>
+        </nav>
+    </footer>
+
+    <script src="..//Projeto FInal/js/funcaoGaleria.js"></script>
+</body>
+
+</html>

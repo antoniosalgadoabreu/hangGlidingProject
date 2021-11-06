@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voa Rio</title>
+
+    <link rel="stylesheet" type="text/css" href="..//Projeto FInal/CSS/EstiloMolde.css">
+    <link rel="stylesheet" href="..//Projeto FInal/CSS/estiloFaleConosco.css">
+
+    <style>
+        .div1 {
+            background-image: url(Imagens/projeto5.jpg)
+        }
+        .div3 {
+            background-image: url(./Imagens/projeto6.jpg)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <nav class="nav1">
+                <p>
+                    <a class="menu" href="index.html"> <b>Home</b></a>
+                    <a class="menu" href="historia.html"><b>Quem Somos</b></a>
+                    <a class="menu" href="galeria.html"><b>Fotos</b></a>
+                    <a class="menu" href="video.html"><b>Videos</b></a>
+                    <a class="menu" href="reserva.html"><b>Reservar Voo</b></a>
+                    <a class="menu" href="faleConosco.html"><b>Fale Conosco</b></a>
+                </p>
+            </nav>
+            <div class="div2">
+                <img src="..//Projeto FInal/Imagens/hang-gliding-99100_960_720.png" alt="Não carregou" height="100%"
+                    width="100%">
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="div3">
+        </div>
+        <div class="div4" style="position: absolute;
+                    height: 780px;
+                    width: 1225px;
+                    margin-top: 500px;
+                    margin-left: 150px;
+                    ;">
+            <h1>Fale Conosco</h1>
+            <hr align="center" size="3px" width="80%" color="white">
+            <br>
+            <form action="">
+                <p class="Pbase">Tire suas dúvidas ou deixe aqui suas reclamações que iremos lhe responder por seu
+                    e-mail em até 24h.</p>
+                <p class="Pbase"> Obrigado!!!</p>
+                <br>
+                <fieldset style="height: 400px;">
+                    <legend>Deixe sua Mensagem:</legend>
+                    <div class="arrumarP1">
+                        <label class="labels" for="iNome"><b>Nome Completo:</b></label>
+                        <input class="inputGrande" type="text" name="nome2" id="iNome" onkeypress="campoVazio('Nome')">
+                        <p class="pErro" id="ierroNome"></p>
+
+                        <label class="labels" for="iCpf"><b>CPF:</b></label>
+                        <input placeholder="000.000.000-00" type="text" name="CPF" id="iCpf"
+                            onkeyup="checkNumero(this.value, 'Cpf')" onkeypress="campoVazio('Cpf')">
+                        <p class="pErro" id="ierroCpf"></p>
+                        <p class="pErro" id="ierroCpf2"></p>
+
+                        <label class="labels" for="iEmail"><b>E-mail:</b></label>
+                        <input class="inputGrande" type="email" name="mail2" id="iEmail" 
+                        onkeyup="verificarEmail(this.value, 'Email')" onblur="styleEmail()" onkeypress="campoVazio('Email')">
+                        <p class="pErro" id="ierroEmail"></p>
+                        <p class="pErro" id="ierroEmail2"></p>
+
+                    </div>
+                    <div class="arrumarP3">
+                        <label class="labels" for="iAssunto"><b>Assunto:</b></label>
+                        <input class="inputGrande" type="text" name="Assunto" id="iAssunto" onkeypress="campoVazio('Assunto')">
+                        <p class="pErro" id="ierroAssunto"></p>
+
+                        <label class="labels" for="iMensagem"><b>Mensagem:</b></label>
+                        <textarea name="Comentario" cols="35" rows="10" id="iMensagem" onkeypress="campoVazio('Mensagem')"></textarea>
+                        <p class="pErro" id="ierroMensagem"></p>
+                    
+                    </div>
+                </fieldset>
+                <input class="botao" type="button" value="Enviar" onclick="verificarCampoVazioFaleConosco()">
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav class="div5">
+            <a href="https://www.youtube.com"><img src="..//Projeto FInal/Imagens/youtube.png" alt="Náo carregou"
+                    height="50px" width="50px"></a>
+            <a href="https://www.instagram.com"><img src="..//Projeto FInal/Imagens/pngegg.png" alt="Náo carregou"
+                    height="50px" width="50px"></a>
+            <br>
+            <p class="Pfinal">
+                ASADELTA - Companhia Turistica / CNPJ: 00.000.000/0000-00 / Inscrição
+                Estadual: 00.000.00-0 / Endereço Rua Queda Livre, 000 - Rio de Janeiro, RJ - 000000-000 </p>
+        </nav>
+
+    </footer>
+    <script src="..//Projeto FInal/js/scriptCamposTexto.js"></script>
+</body>
+
+</html>

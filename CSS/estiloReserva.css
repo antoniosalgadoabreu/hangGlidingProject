@@ -1,0 +1,107 @@
+.fieldsetRd1 {
+    border: 3px solid white;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.fieldsetExterno {
+    border: 3px solid white;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.fieldsetInterno {
+    border: 3px solid white;
+    border-radius: 30px;
+    width: 150px;
+}
+
+legend {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.labels {
+    color: white;
+    font-size: 20px;
+    display: block;
+    float: left;
+}
+
+.labelsUf {
+    color: white;
+    font-size: 20px;
+}
+
+.arrumarP1 {
+    margin-left: 25px;
+    width: 500px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.arrumarP2 {
+    position: absolute;
+    margin-left: 425px;
+    margin-top: 15px;
+    width: 500px;
+}
+
+.arrumarP3 {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 815px;
+}
+.arrumarP4 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 815px;
+}
+
+input {
+    color: blue;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+label,
+input {
+    width: 280px;
+    margin: 3px 0;
+}
+
+.botao {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(218, 206, 160);
+    border-radius: 10px;
+    border: 2px solid blue;
+
+}
+
+.radio1 {
+    font-size: 15px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 18px;
+}
+
+.pErro {
+    margin: 0px;
+    font-size: 17px;
+    font-weight: bold;
+}
